@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dwmSy.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="cute-cat-looking-at-the-camera-with-its-ears-hiding.jpeg" alt="">
+
+    <h1>Will You Go On A Date With Me?</h1>
+
+    <div class="btns">
+    <a href="yeaa.html"><button>Yes</button></a>
+    <button class="random-button" onmouseover="changePosition()">No</button>
+    </div>
+
+
+    <script>
+        function changePosition() {
+            var button = document.querySelector('.random-button');
+        
+            // Calculate random positions
+            var randomX = Math.floor(Math.random() * window.innerWidth);
+            var randomY = Math.floor(Math.random() * window.innerHeight);
+        
+            // Apply new positions
+            button.style.left = randomX + 'px';
+            button.style.top = randomY + 'px';
+        }
+    </script>
+    
+    
+</body>
+</html>
